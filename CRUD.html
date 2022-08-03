@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>CRUD Employee Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <br><br>
+    <h1 class="text-4xl font-bold flex-auto grid justify-items-center ...">PHP - MySql CURD</h1>
+
+    <hr>
+</head>
+<body>
+    <table class="flex-auto grid justify-items-center ...">
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div class="space-x-3 space-y-7" >
+                        <label >Enter Name</label>
+                        <input type="text" name="fullname" id="fullname" class="rounded-sm border-2 border-gray-400 border-radius: 0.375rem;">
+                    </div>
+                    <div class="space-x-4 space-y-2">
+                        <label >Enter Email</label>
+                        <input type="text" name="emailid" id="emailid" class="rounded-sm border-2 border-gray-400 border-radius: 0.375rem;">
+                    </div>
+                    <div class="space-x-0 space-y-2">
+                        <label >Enter YourNo</label>
+                        <input type="text" name="contactno" id="contactno" class="rounded-sm border-2 border-gray-400 border-radius: 0.375rem;">
+                    </div>
+                    <div class="form-action-buttons text-1xl font-bold mt-4 ml-6 py-2 px-4 font-bold text-center bg-gray-300 rounded-xl hover:bg-black hover:text-white">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+           
+        </tr>
+        <tr>
+            <td>
+                <table class="list mt-4 flex-auto rounded-sm border-2 border-gray-400 border-radius: 0.375rem;" id="employeelist" border="2">
+                    <thead>
+                        <tr >
+                            <td class="font-bold">Full Name&nbsp;</td>
+                            <td class="font-bold">Email Id</td>
+                            <td class="font-bold margin-left: 0.5rem;">Contact No</td>
+                            <td></td>
+                            
+                        </tr>
+                        <tr>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="form.js"></script>
+</body>
+</html>
